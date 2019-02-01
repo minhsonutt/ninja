@@ -1,0 +1,73 @@
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <title>USSV TOOLS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <style type="text/css">
+      .hide {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 500px;padding-top: 10px;">
+      <div class="col-lg-12 thongbao">
+	  
+	  </div>
+	  <div class="col-lg-12 ninja-login hide">
+        <form>
+         
+          <div class="form-group">
+            <label class="form-control-label">Cookie</label>
+            <input type="text" class="form-control" id="login-cookie">
+          </div>
+		
+          <div class="form-group">
+            <label class="form-control-label">Token </label>
+            <input type="text" class="form-control" id="login-token">
+          </div>
+		 
+          <div class="form-group">
+            <button class="btn btn-primary account-btn-login">Đăng nhập</button> 
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-12 account-login-info hide">
+        <form>
+          <div class="form-group">
+            <label class="form-control-label">UID</label>
+            <input type="text" class="form-control" id="account-uid">
+          </div>
+		  <div class="form-group">
+            <label class="form-control-label"><b style="color:red;">* Password</b></label>
+            <input type="password" class="form-control" id="account-password" placeholder="Vui lòng nhập mật khẩu để Get Token">
+          </div>
+          <div class="form-group">
+            <label class="form-control-label">Cookie</label>
+            <input type="text" class="form-control" id="account-cookie">
+          </div>
+		
+          <div class="form-group">
+            <label class="form-control-label">Token <span class="account-token-waiting hide"><img src="https://tai.ninjateam.vn/load.gif" style="width: 15px;"></span></label>
+            <input type="text" class="form-control" id="account-token">
+          </div>
+		 <div class="form-group">
+            <label class="form-control-label">UID|Pass|Token|Cookies (định dạng chuẩn cho <a href="http://phanmemfacebook.net" target="_bank">Ninja Care</a>) <span class="account-token-waiting hide"><img src="https://tai.ninjateam.vn/load.gif" style="width: 15px;"></span></label>
+            <input type="text" class="form-control" id="account-ninjacare">
+          </div>
+		  <div class="form-group">
+            <label class="form-control-label">Token|Cookies (<a href="https://www.phanmemninja.com/phan-mem-share-livestream-len-group-tang-view-livestream/" target="_bank">Ninja Share Live Stream</a> & <a href="https://www.phanmemninja.com/ninja-add-friend-phan-mem-ket-ban-facebook-hang-loat-5000-ban"  target="_bank">Ninja Add Friend</a>) <span class="account-token-waiting hide"><img src="https://tai.ninjateam.vn/load.gif" style="width: 15px;"></span></label>
+            <input type="text" class="form-control" id="account-ninja-af">
+          </div>
+          <div class="form-group text-center">
+            <button class="btn btn-primary account-btn-get-token">Get Token</button> <button class="btn btn-warning account-btn-logout">Đăng xuất</button> 
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </body>
+  <script src="jquery.min.js"></script>
+  <script src="popup.js"></script>
+</html>
